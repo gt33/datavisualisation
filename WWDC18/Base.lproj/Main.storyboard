@@ -1,24 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XjZ-Qb-zue">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bar View Controller-->
+        <scene sceneID="bqd-QL-z7m">
+            <objects>
+                <viewController id="dyI-Hg-urv" customClass="BarViewController" customModule="WWDC18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ASp-o0-S6A" customClass="GrowingBar" customModule="WWDC18" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="03U-tc-hfu"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="h5N-de-FkR" appends="YES" id="SvF-sV-wcr"/>
+                            <outletCollection property="gestureRecognizers" destination="DwF-9r-guG" appends="YES" id="E0i-Au-kdo"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="singleBar" destination="ASp-o0-S6A" id="0hX-hO-pbh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cc-pG-mb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="h5N-de-FkR">
+                    <connections>
+                        <action selector="goDown:" destination="dyI-Hg-urv" id="8yG-QV-NAY"/>
+                        <segue destination="gfE-Vh-ARA" kind="show" identifier="barToCircle" id="WvP-hd-3cL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="DwF-9r-guG">
+                    <connections>
+                        <action selector="goUp:" destination="dyI-Hg-urv" id="Dl1-F3-52D"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="barToGraph" id="45r-bc-tPJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="33" y="815"/>
+        </scene>
+        <!--Sin View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="SinViewController" customModule="WWDC18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="BarGraphView" customModule="WWDC18" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="okS-Nk-N8a" appends="YES" id="ZrR-F7-5ln"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="barGraph" destination="8bC-Xf-vdC" id="FXF-sW-wXo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="okS-Nk-N8a">
+                    <connections>
+                        <action selector="SwipeUp:" destination="BYZ-38-t0r" id="RwR-Ta-ael"/>
+                        <segue destination="dyI-Hg-urv" kind="show" identifier="sinToBar" id="jOR-EQ-b6w"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="103.89805097451276"/>
+        </scene>
+        <!--Circle View Controller-->
+        <scene sceneID="7F3-6s-WUk">
+            <objects>
+                <viewController id="gfE-Vh-ARA" customClass="CircleViewController" customModule="WWDC18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ouy-4X-yR6" customClass="CircleView" customModule="WWDC18" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="qae-l0-VUu"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VLi-qV-Mq3" appends="YES" id="mB2-bu-9uv"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="circleView" destination="ouy-4X-yR6" id="BHA-qV-nVG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DZ-cb-B21" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="VLi-qV-Mq3">
+                    <connections>
+                        <action selector="goUp:" destination="gfE-Vh-ARA" id="WyV-Qw-DmR"/>
+                        <segue destination="dyI-Hg-urv" kind="show" identifier="circleToBar" id="vG5-Kk-WHt"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="33" y="1499"/>
+        </scene>
+        <!--Master View Controller-->
+        <scene sceneID="00j-2o-BtM">
+            <objects>
+                <viewController id="XjZ-Qb-zue" customClass="MasterViewController" customModule="WWDC18" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VJg-96-CKn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1FR-0q-P50"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QpJ-xt-V74" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="-624"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jOR-EQ-b6w"/>
+    </inferredMetricsTieBreakers>
 </document>

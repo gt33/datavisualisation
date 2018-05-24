@@ -1,10 +1,5 @@
-//
-//  AppDelegate.swift
-//  WWDC18
-//
-//  Created by G on 19/03/2018.
-//  Copyright © 2018 G. All rights reserved.
-//
+//  Created by George Taylor on 19/03/2018.
+//  Copyright © 2018 George Taylor. All rights reserved.
 
 import UIKit
 

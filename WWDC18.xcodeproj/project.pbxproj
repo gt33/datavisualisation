@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0689F3206ED27A00D5560B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0689F2206ED27A00D5560B /* Media.xcassets */; };
+		5E07F08220696D0A005DF2F8 /* ClimateCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07F08120696D0A005DF2F8 /* ClimateCircleView.swift */; };
+		5E07F08420696D17005DF2F8 /* ClimateGrowingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07F08320696D17005DF2F8 /* ClimateGrowingBarView.swift */; };
+		5E0D6B1720616425007A5274 /* BarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D6B1620616425007A5274 /* BarGraphView.swift */; };
+		5E0D6B192062B895007A5274 /* GrowingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D6B182062B895007A5274 /* GrowingBarView.swift */; };
+		5E2FC4F4206401ED00431038 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FC4F3206401ED00431038 /* CircleView.swift */; };
+		5E2FC4FF20693AB200431038 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FC4FE20693AB200431038 /* MasterViewController.swift */; };
+		5E2FC50720693BD700431038 /* ClimateBarGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2FC50620693BD700431038 /* ClimateBarGraphView.swift */; };
+		5E4425DB206A9AA600C6640E /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4425DA206A9AA600C6640E /* DisplayView.swift */; };
 		5EA6651A205FFCDF005C7969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA66519205FFCDF005C7969 /* AppDelegate.swift */; };
-		5EA6651C205FFCDF005C7969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6651B205FFCDF005C7969 /* ViewController.swift */; };
 		5EA6651F205FFCDF005C7969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA6651D205FFCDF005C7969 /* Main.storyboard */; };
-		5EA66521205FFCDF005C7969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA66520205FFCDF005C7969 /* Assets.xcassets */; };
 		5EA66524205FFCDF005C7969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EA66522205FFCDF005C7969 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E0689F2206ED27A00D5560B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		5E07F08120696D0A005DF2F8 /* ClimateCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateCircleView.swift; sourceTree = "<group>"; };
+		5E07F08320696D17005DF2F8 /* ClimateGrowingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateGrowingBarView.swift; sourceTree = "<group>"; };
+		5E0D6B1620616425007A5274 /* BarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphView.swift; sourceTree = "<group>"; };
+		5E0D6B182062B895007A5274 /* GrowingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingBarView.swift; sourceTree = "<group>"; };
+		5E2FC4F3206401ED00431038 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		5E2FC4FE20693AB200431038 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		5E2FC50620693BD700431038 /* ClimateBarGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateBarGraphView.swift; sourceTree = "<group>"; };
+		5E4425DA206A9AA600C6640E /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		5EA66516205FFCDF005C7969 /* WWDC18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA66519205FFCDF005C7969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EA6651B205FFCDF005C7969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EA6651E205FFCDF005C7969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5EA66520205FFCDF005C7969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EA66523205FFCDF005C7969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EA66525205FFCDF005C7969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,11 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				5EA66519205FFCDF005C7969 /* AppDelegate.swift */,
-				5EA6651B205FFCDF005C7969 /* ViewController.swift */,
+				5E4425DA206A9AA600C6640E /* DisplayView.swift */,
+				5E2FC4FE20693AB200431038 /* MasterViewController.swift */,
+				5E0D6B1620616425007A5274 /* BarGraphView.swift */,
+				5E0D6B182062B895007A5274 /* GrowingBarView.swift */,
+				5E2FC4F3206401ED00431038 /* CircleView.swift */,
+				5E2FC50620693BD700431038 /* ClimateBarGraphView.swift */,
+				5E07F08320696D17005DF2F8 /* ClimateGrowingBarView.swift */,
+				5E07F08120696D0A005DF2F8 /* ClimateCircleView.swift */,
 				5EA6651D205FFCDF005C7969 /* Main.storyboard */,
-				5EA66520205FFCDF005C7969 /* Assets.xcassets */,
 				5EA66522205FFCDF005C7969 /* LaunchScreen.storyboard */,
 				5EA66525205FFCDF005C7969 /* Info.plist */,
+				5E0689F2206ED27A00D5560B /* Media.xcassets */,
 			);
 			path = WWDC18;
 			sourceTree = "<group>";
@@ -124,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA66524205FFCDF005C7969 /* LaunchScreen.storyboard in Resources */,
-				5EA66521205FFCDF005C7969 /* Assets.xcassets in Resources */,
+				5E0689F3206ED27A00D5560B /* Media.xcassets in Resources */,
 				5EA6651F205FFCDF005C7969 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +157,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EA6651C205FFCDF005C7969 /* ViewController.swift in Sources */,
+				5E4425DB206A9AA600C6640E /* DisplayView.swift in Sources */,
+				5E2FC4FF20693AB200431038 /* MasterViewController.swift in Sources */,
+				5E0D6B192062B895007A5274 /* GrowingBarView.swift in Sources */,
+				5E07F08220696D0A005DF2F8 /* ClimateCircleView.swift in Sources */,
+				5E0D6B1720616425007A5274 /* BarGraphView.swift in Sources */,
+				5E07F08420696D17005DF2F8 /* ClimateGrowingBarView.swift in Sources */,
+				5E2FC50720693BD700431038 /* ClimateBarGraphView.swift in Sources */,
 				5EA6651A205FFCDF005C7969 /* AppDelegate.swift in Sources */,
+				5E2FC4F4206401ED00431038 /* CircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S994LU3H7V;
 				INFOPLIST_FILE = WWDC18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = g.WWDC18;
@@ -289,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S994LU3H7V;
 				INFOPLIST_FILE = WWDC18/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = g.WWDC18;
